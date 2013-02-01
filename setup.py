@@ -28,10 +28,10 @@ if (sys.version_info < (2, 6, 0, 'final', 0)):
 from distutils.core import setup, Extension
 
 
-cdiomodule = Extension('audiotools.cdio',
-                       sources=['src/cdiomodule.c'],
-                       libraries=['cdio', 'cdio_paranoia',
-                                  'cdio_cdda', 'm'])
+#cdiomodule = Extension('audiotools.cdio',
+#                       sources=['src/cdiomodule.c'],
+#                       libraries=['cdio', 'cdio_paranoia',
+#                                  'cdio_cdda', 'm'])
 
 pcmmodule = Extension('audiotools.pcm',
                       sources=['src/pcm.c'])
@@ -146,7 +146,7 @@ setup(name='Python Audio Tools',
       packages=["audiotools",
                 "audiotools.py_decoders",
                 "audiotools.py_encoders"],
-      ext_modules=[cdiomodule,
+      ext_modules=[#cdiomodule,
                    pcmmodule,
                    pcmconvmodule,
                    replaygainmodule,
@@ -157,15 +157,15 @@ setup(name='Python Audio Tools',
                    outputmodule],
       data_files=[("/etc", ["audiotools.cfg"])],
       scripts=["audiotools-config",
-               "cd2track",
-               "cdinfo",
-               "cdplay",
+               #"cd2track",
+               #"cdinfo",
+               #"cdplay",
                "coverdump",
                "covertag",
                "coverview",
                "dvda2track",
                "dvdainfo",
-               "track2cd",
+               #"track2cd",
                "track2track",
                "trackcat",
                "trackcmp",

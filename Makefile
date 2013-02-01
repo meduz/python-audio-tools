@@ -30,14 +30,14 @@ construct_install:
 
 EXECUTABLES = \
 audiotools_config \
-cd2track \
-cdinfo \
-cdplay \
+#cd2track \
+#cdinfo \
+#cdplay \
 coverdump \
 coverview \
 dvda2track \
 dvdainfo \
-track2cd \
+#track2cd \
 track2track \
 trackcat \
 trackcmp \
